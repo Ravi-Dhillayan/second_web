@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+.B_img {
+    height: 250px; 
+    border: 2px solid black; 
+    background-image: url("../gallery/room-4.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.B_img h2 {
+    background-image: linear-gradient(red, blue);
+    color: transparent;
+    background-clip: text;
+    margin: 0;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-weight: bold; 
+    letter-spacing: 2px; 
+    /* color: rgb(56, 160, 160); */
+}
+
+
+@media (max-width: 768px) {
+    .B_img {
+        height: 200px; 
+        font-size: 1.5rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .B_img {
+        height: 150px; 
+        font-size: 1rem; 
+    }
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../gallery/2-thumb.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.water {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    color: bisque;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.h3 {
+    margin: 0;
+    font-size: 40px;
+    color: yellow;
+    font-weight: bold;
+}
+
+.jus:hover {
+    background-color: black;
+    color: aliceblue;
+}
+
+.volunteer-section {
+    text-align: center;
+    border: 1px solid black;
+    background-color: yellow;
+    padding: 20px;
+}
+
+.volunteer-section h2 {
+    font-size: 60px;
+}
+
+.volunteer-section p {
+    font-size: 18px;
+}
+
+.volunteer-section button {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    transition: background-color 0.3s ease;
+}
+
+.volunteer-section button:hover {
+    background-color: darkgray;
+}
+
+@media (max-width: 768px) {
+    .h3 {
+        font-size: 30px;
+    }
+
+    .volunteer-section h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .h3 {
+        font-size: 25px;
+    }
+
+    .volunteer-section h2 {
+        font-size: 30px;
+    }
+
+    .volunteer-section p {
+        font-size: 16px;
+    }
+}
+
+.hope h2 {
+    margin-bottom: 10px;
+    color: yellow;
+}
+
+.hope p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.hope:hover {
+    color: yellow;
+}
+footer{
+    background-color: black;
+    color: antiquewhite;
+}
+footer h2{
+    height: 70px;
+    font:inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three photos per row */
+    gap: 10px;
+    padding: 10px;
+}
+
+.G_photos {
+    margin-top: 10px;
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.G_photos:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Add responsiveness for small screens */
+@media (max-width: 768px) {
+    #Gallery {
+        grid-template-columns: repeat(2, 1fr); /* Two photos per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #Gallery {
+        grid-template-columns: 1fr; /* One photo per row on very small screens */
+    }
+}
